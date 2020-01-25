@@ -11,12 +11,12 @@ let svg = new MYSVG('.svg', 500, 500, { invertY: true });
 let path = svg.path('M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80', {
     id: 'tutu',
     fill: 'none',
-    stroke: '#ff0066',
+    stroke: 'var(--dark90)',
     'stroke-width': '4'
 });
 
 let circle = svg
-    .circle('60', '200', '50', { fill: 'none', stroke: '#ff0066', 'stroke-width': '4' })
+    .circle('60', '200', '50', { fill: 'none', stroke: 'var(--dark90)', 'stroke-width': '4' })
     .fillablePath(range.value);
 
 let text = svg
@@ -28,7 +28,7 @@ let svgLine = new MYSVG('.svgLine', 500, 300);
 
 let pathLine = svgLine.path('M10 25 L 480 285', {
     fill: 'none',
-    stroke: '#ff0066',
+    stroke: 'var(--dark90)',
     'stroke-width': '4'
 });
 
@@ -50,7 +50,7 @@ let point = svgLine.circle(
     getX(a[1] + ((b[1] - a[1]) * pointY.value) / 100, { a, b }),
     getY(a[0] + ((b[0] - a[0]) * pointX.value) / 100, { a, b }),
     4,
-    { fill: 'blue' }
+    { fill: 'var(--brown84)' }
 );
 
 pointX.addEventListener('input', () => {
@@ -71,7 +71,7 @@ let svg2 = new MYSVG('.svg2', 500, 500);
 
 let path2 = svg2.path('M10 10 C 70 10 70 20 10 50', {
     fill: 'none',
-    stroke: '#ff0066',
+    stroke: 'var(--dark90)',
     'stroke-width': '4'
 });
 

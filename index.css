@@ -22,6 +22,9 @@ body {
 }
 
 body {
+    display: grid;
+    justify-items: center;
+    align-items: center;
     background: linear-gradient(var(--deg), var(--dark9), var(--dark12B), var(--dark15));
     font-family: monospace;
     color: var(--dark50);
